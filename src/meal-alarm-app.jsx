@@ -236,13 +236,13 @@ const MealAlarmApp = () => {
               <div className="flex flex-col items-center mt-12">
                 <button 
                   onClick={randomizeFoodIcon}
-                  className="relative group cursor-pointer"
+                  className="relative group cursor-pointer bg-transparent border-0 p-0 shadow-none focus:outline-none focus:ring-0"
                   title="Click for food idea!"
                 >
                   <div className="text-8xl transition-transform hover:scale-110 active:scale-95">
                     {currentFoodIcon}
                   </div>
-                  {/*<div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-white/40 rounded-full blur-sm"></div>*/}
+                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-white/40 rounded-full blur-sm"></div>
                 </button>
                 
                 <div className="mt-4">
