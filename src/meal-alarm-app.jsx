@@ -215,7 +215,6 @@ const MealAlarmApp = () => {
                   <X size={18} color="#78350f" />
                 </button>
             </div>
-            </div>
           </div>
 
           <div className="bg-yellow-50 border-4 border-amber-800 rounded-lg p-6 relative overflow-hidden" style={{ minHeight: '450px' }}>
@@ -266,6 +265,7 @@ const MealAlarmApp = () => {
             </div>
           </div>
         </div>
+      </div>
     );
   }
 
