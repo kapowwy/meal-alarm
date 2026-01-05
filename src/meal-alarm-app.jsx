@@ -198,18 +198,11 @@ const MealAlarmApp = () => {
               >
                 <Settings size={18} color="#78350f" />
               </button>
-              <button 
-                className="w-8 h-8 bg-yellow-300 border-2 border-amber-800 rounded"
-              ></button>
-              <button 
-                className="w-8 h-8 bg-red-300 border-2 border-amber-800 rounded"
-              ></button>
 
               {/* Minimize */}
               <button
                 className="w-8 h-8 bg-yellow-300 border-2 border-amber-800 rounded flex items-center justify-center"
                 onClick={() => setCurrentView('main')}
-                type="button"
               >
                 <Minus size={18} color="#78350f" />
               </button>
@@ -218,7 +211,6 @@ const MealAlarmApp = () => {
                 <button
                   className="w-8 h-8 bg-red-300 border-2 border-amber-800 rounded flex items-center justify-center"
                   onClick={() => setCurrentView('main')}
-                  type="button"
                 >
                   <X size={18} color="#78350f" />
                 </button>
