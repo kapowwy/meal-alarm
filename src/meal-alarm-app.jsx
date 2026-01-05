@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Clock, Bell, Settings, Plus, X, Check, AlarmClockOff } from 'lucide-react';
+import { Clock, Bell, Settings, Plus, Minus, X, Check, AlarmClockOff } from 'lucide-react';
 
 const MealAlarmApp = () => {
   const [currentView, setCurrentView] = useState('main');
@@ -191,11 +191,12 @@ const MealAlarmApp = () => {
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-amber-900 font-bold text-lg">TIME TO EAT &lt;3</h1>
             <div className="flex gap-2">
+              {/* Settings button */}
               <button 
                 className="w-8 h-8 bg-orange-300 border-2 border-amber-800 rounded flex items-center justify-center hover:bg-orange-400 transition-colors"
                 onClick={() => setCurrentView('settings')}
               >
-                <Settings className="w-5 h-5 text-amber-900" />
+                <Settings size={18} color="#78350f" />
               </button>
               <button 
                 className="w-8 h-8 bg-yellow-300 border-2 border-amber-800 rounded"
@@ -203,6 +204,25 @@ const MealAlarmApp = () => {
               <button 
                 className="w-8 h-8 bg-red-300 border-2 border-amber-800 rounded"
               ></button>
+
+              {/* Minimize */}
+              <button
+                className="w-8 h-8 bg-yellow-300 border-2 border-amber-800 rounded flex items-center justify-center"
+                onClick={() => setCurrentView('main')}
+                type="button"
+              >
+                <Minus size={18} color="#78350f" />
+              </button>
+
+                {/* Close */}
+                <button
+                  className="w-8 h-8 bg-red-300 border-2 border-amber-800 rounded flex items-center justify-center"
+                  onClick={() => setCurrentView('main')}
+                  type="button"
+                >
+                  <X size={18} color="#78350f" />
+                </button>
+            </div>
             </div>
           </div>
 
@@ -254,7 +274,6 @@ const MealAlarmApp = () => {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 
