@@ -242,7 +242,7 @@ const MealAlarmApp = () => {
                   <div className="text-8xl transition-transform hover:scale-110 active:scale-95">
                     {currentFoodIcon}
                   </div>
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-white/40 rounded-full blur-sm"></div>
+                  {/*<div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-white/40 rounded-full blur-sm"></div>*/}
                 </button>
                 
                 <div className="mt-4">
